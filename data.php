@@ -1,13 +1,11 @@
 <?php
 
-ini_set('display_errors', E_ALL^E_NOTICE);
-
 require_once 'phar://goutte.phar/autoload.php';
 
 use Goutte\Client;
 
 $cities = array('BRU', 'ANR', 'GNE', 'LGG', 'CRL');
-$time = filemtime('cache/data');
+$time = file_exists('cache/data') ? filemtime('cache/data') : 0;
 
 if ($time && time()-$time <= 60*60) {
 	$result = json_decode(file_get_contents('cache/data'), true);
@@ -19,6 +17,10 @@ else {
 	});
 	
 	$result = array_combine($cities, array_slice($indexes, 0, 5));
+	
+	if (!file_exists('cache')) {
+		mkdir('cache');
+	}
 	file_put_contents('cache/data', json_encode($result));
 }
 
