@@ -1,7 +1,7 @@
 == ABOUT ==
 
 Web service to get air quality index in Belgium.
-The index goes from 1 (good) to 10 (hazardous).
+The index goes from 1 (excellent) to 10 (horrible).
 More informations about air quality here: http://en.wikipedia.org/wiki/Air_quality
 
 BRU = Brussels
