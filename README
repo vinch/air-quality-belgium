@@ -1,0 +1,22 @@
+== ABOUT ==
+
+Web service to get air quality index in Belgium.
+The index goes from 1 (good) to 10 (hazardous).
+More informations about air quality here: http://en.wikipedia.org/wiki/Air_quality
+
+BRU = Brussels
+ANR = Antwerp
+GNE = Ghent
+LGG = Liège
+CRL = Charleroi
+
+LOCODE --> http://www.unece.org/cefact/locode/be.htm
+
+== TECHNICAL NOTES ==
+
+* This project is using Goutte web scrapper by Fabien Potencier --> https://github.com/fabpot/Goutte
+* The "cache" folder must be writable by the server
+
+== REQUIREMENTS ==
+
+PHP 5.2 --> http://www.php.net/manual/en/phar.requirements.php
