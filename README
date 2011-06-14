@@ -19,4 +19,4 @@ LOCODE --> http://www.unece.org/cefact/locode/be.htm
 
 == REQUIREMENTS ==
 
-PHP 5.2 --> http://www.php.net/manual/en/phar.requirements.php
+PHP 5.3 --> http://www.php.net/manual/en/phar.requirements.php
