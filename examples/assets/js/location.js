@@ -57,7 +57,20 @@ function error(msg) {
 	displayAirQuality('BRU');
 }
 
+function resizeIndex() {
+	var w = $(window).height() - $('#city').height();
+	w = (w > 300) ? w : 300;
+	$('#index').css({
+		height: w+'px',
+		lineHeight: w+'px'
+	});
+}
+
 $(document).ready(function() {
+	
+	resizeIndex();
+	
+	$(window).resize(resizeIndex);
 	
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(success, error);
