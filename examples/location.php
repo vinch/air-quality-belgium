@@ -3,6 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Air quality Belgium</title>
 	<link rel="stylesheet" href="assets/css/location.css" type="text/css" />
 </head>
